@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "cultish",
+  "version": "${version}",
+  "name": "Cultish",
+  "description": "A spooky monster mod for Minecraft.",
+  "authors": [],
+  "contact": {},
+  "license": "Apache-2.0",
+  "icon": "assets/cultish/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "dev.ashrayshah.client.cultishDataGenerator"
+    ],
+    "client": [
+      "dev.ashrayshah.client.cultishClient"
+    ],
+    "main": [
+      "dev.ashrayshah.cultish"
+    ]
+  },
+  "mixins": [
+    "cultish.mixins.json",
+    {
+      "config": "cultish.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
