@@ -1,7 +1,7 @@
 package dev.ashrayshah.client.entities;
 
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.mob.PathAwareEntity;
+import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.world.World;
 import software.bernie.geckolib.animatable.GeoAnimatable;
 import software.bernie.geckolib.animatable.GeoEntity;
@@ -13,12 +13,12 @@ import software.bernie.geckolib.animation.PlayState;
 import software.bernie.geckolib.animation.RawAnimation;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
-public class ProphetEntity extends PathAwareEntity implements GeoEntity {
-    protected static final RawAnimation FLY_ANIM = RawAnimation.begin().thenLoop("prophet.fly");
+public class ProphetEntity extends HostileEntity implements GeoEntity {
+    protected static final RawAnimation FLY_ANIM = RawAnimation.begin().thenLoop("animation.prophet.fly");
 
     private final AnimatableInstanceCache geoCache = GeckoLibUtil.createInstanceCache(this);
 
-    public ProphetEntity(EntityType<? extends PathAwareEntity> entityType, World world) {
+    public ProphetEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
 
