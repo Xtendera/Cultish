@@ -6,5 +6,6 @@ public class cultishClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+
     }
 }
