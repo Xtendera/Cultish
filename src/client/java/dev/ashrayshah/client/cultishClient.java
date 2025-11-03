@@ -13,5 +13,6 @@ public class cultishClient implements ClientModInitializer {
         ModEntities.register();
         FabricDefaultAttributeRegistry.register(ModEntities.PROPHET, ProphetEntity.createMobAttributes());
         EntityRendererFactories.register(ModEntities.PROPHET, ProphetRenderer::new);
+        ProphetSummoner.register();
     }
 }

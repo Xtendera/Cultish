@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "dev.ashrayshah.mixin.client",
+  "package": "dev.ashrayshah.client.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
   ],
@@ -10,5 +10,7 @@
   },
   "overwrites": {
     "requireAnnotations": true
-  }
+  },
+  "mixins": [
+  ]
 }
