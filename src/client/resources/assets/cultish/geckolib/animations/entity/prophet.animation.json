@@ -2,44 +2,39 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"animation.prophet.fly": {
-			"animation_length": 1.4583,
+			"animation_length": 2,
 			"bones": {
-				"legs": {
-					"rotation": {
-						"vector": [0, 0, 52.5]
-					},
-					"position": {
-						"0.0": {
-							"vector": [-2, -0.5, 0]
-						},
-						"0.5": {
-							"vector": [-2, 2.5, 0]
-						}
-					}
-				},
 				"leg_l": {
 					"rotation": {
 						"0.0": {
-							"vector": [0, 0, 0]
-						},
-						"0.5": {
-							"vector": [0, 0, -15]
+							"vector": [0, 0, 50]
 						},
 						"1.0": {
-							"vector": [0, 0, 2.5]
+							"vector": [0, 0, 67.5]
+						},
+						"2.0": {
+							"vector": [0, 0, 50]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, -2, 0]
+						},
+						"2.0": {
+							"vector": [0, -2, 0]
 						}
 					}
 				},
 				"leg_r": {
 					"rotation": {
-						"0.1667": {
-							"vector": [0, 0, -2.5]
+						"0.0": {
+							"vector": [0, 0, 47.5]
 						},
-						"0.5": {
-							"vector": [0, 0, -15]
+						"1.0": {
+							"vector": [0, 0, 30]
 						},
-						"1.4583": {
-							"vector": [0, 0, 5]
+						"2.0": {
+							"vector": [0, 0, 47.5]
 						}
 					}
 				}

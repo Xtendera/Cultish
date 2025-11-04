@@ -1,6 +1,7 @@
 package dev.ashrayshah.client;
 
 import dev.ashrayshah.client.entities.ProphetEntity;
+import dev.ashrayshah.client.utils.LightningEffectHelper;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.pattern.BlockPattern;
@@ -131,7 +132,7 @@ public class ProphetSummoner {
             prophet.initialize(world, world.getLocalDifficulty(centerPos),
                     SpawnReason.EVENT, null);
             world.spawnEntity(prophet);
-
+            LightningEffectHelper.strikeLightningEffect(world, centerPos, 5);
             world.playSound(null, centerPos,
                     net.minecraft.sound.SoundEvents.ENTITY_WITHER_SPAWN,
                     net.minecraft.sound.SoundCategory.HOSTILE,
