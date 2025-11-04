@@ -45,9 +45,9 @@ public class ProphetEntity extends HostileEntity implements GeoEntity, RangedAtt
 
     public static DefaultAttributeContainer.Builder createMobAttributes() {
         return HostileEntity.createHostileAttributes()
-                .add(EntityAttributes.MAX_HEALTH, 20.0)
+                .add(EntityAttributes.MAX_HEALTH, 100)
                 .add(EntityAttributes.MOVEMENT_SPEED, 0.25)
-                .add(EntityAttributes.ATTACK_DAMAGE, 3.0)
+                .add(EntityAttributes.ATTACK_DAMAGE, 8.0)
                 .add(EntityAttributes.FOLLOW_RANGE, 35.0)
                 .add(EntityAttributes.ARMOR, 2.0);
     }
